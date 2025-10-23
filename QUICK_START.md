@@ -11,7 +11,7 @@ No additional dependencies required. The NSN integration uses existing quantum_i
 ### 1. Backend-Aware Rank Selection (30 seconds)
 
 ```python
-from quantum_integration.nsn_integration import BackendAwareRankSelector, BackendType
+from Quantum-LIMIT-Graph-v2.4.0-NSN import BackendAwareRankSelector, BackendType
 
 selector = BackendAwareRankSelector()
 recommendation = selector.get_rank_recommendation(
@@ -27,7 +27,7 @@ print(f"Rationale: {recommendation['rationale']}")
 ### 2. Multilingual Evaluation (1 minute)
 
 ```python
-from quantum_integration.nsn_integration import MultilingualNSNEvaluator
+from Quantum-LIMIT-Graph-v2.4.0-NSN import MultilingualNSNEvaluator
 
 evaluator = MultilingualNSNEvaluator()
 result = evaluator.evaluate_language_edit('indonesian', rank=64)
@@ -69,13 +69,13 @@ print(f"Position: {rankings[0]['position']}")
 ## Run Complete Demo
 
 ```bash
-python quantum_integration/nsn_integration/demo_complete_nsn_integration.py
+python demo_complete_nsn_integration.py
 ```
 
 ## Run Tests
 
 ```bash
-python quantum_integration/nsn_integration/test_nsn_integration.py
+python test_nsn_integration.py
 ```
 
 ## Next Steps
@@ -88,3 +88,4 @@ python quantum_integration/nsn_integration/test_nsn_integration.py
 ## Support
 
 Check the README.md or open an issue for help!
+
