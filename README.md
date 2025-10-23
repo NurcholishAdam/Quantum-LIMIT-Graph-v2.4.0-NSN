@@ -599,3 +599,4 @@ The demo will:
 - [ ] Integration with Hugging Face Spaces for public leaderboard
 - [ ] Quantum circuit optimization for rank-specific operations
 
+
