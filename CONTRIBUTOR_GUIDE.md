@@ -231,21 +231,21 @@ print(f"Best Backend: {result.best_backend}")
 
 ```bash
 # Clone repository
-git clone https://github.com/your-repo/quantum-limit-graph.git
-cd quantum-limit-graph
+git clone https://github.com/NurcholishAdam/Quantum-LIMIT-Graph-v2.4.0-NSN
+cd Quantum-LIMIT-Graph-v2.4.0-NSN
 
 # Install dependencies
-pip install -r quantum_integration/nsn_integration/requirements_dashboard.txt
+pip install -r requirements_dashboard.txt
 
 # Run tests
-pytest quantum_integration/nsn_integration/test_v2.4.0_scenarios.py -v
+pytest test_v2.4.0_scenarios.py -v
 ```
 
 ### Running the Dashboard Locally
 
 ```bash
 # Launch Gradio dashboard
-python quantum_integration/nsn_integration/huggingface_dashboard.py
+python huggingface_dashboard.py
 
 # Open browser to http://localhost:7860
 ```
@@ -294,7 +294,7 @@ python quantum_integration/nsn_integration/huggingface_dashboard.py
 
 ## 📊 Leaderboard
 
-View the live leaderboard at: [Hugging Face Spaces Dashboard](https://huggingface.co/spaces/your-org/nsn-integration-dashboard)
+View the live leaderboard at: [Hugging Face Spaces Dashboard](https://huggingface.co/spaces/AIResAgTeam/quantum-nsn-integration)
 
 ### Current Top Contributors
 
@@ -305,14 +305,6 @@ View the live leaderboard at: [Hugging Face Spaces Dashboard](https://huggingfac
 | 3 | contributor_003 | 85.3 | 🎯 Accuracy | 45 |
 
 ---
-
-## 🎁 Rewards & Recognition
-
-### Monthly Prizes
-
-- **🥇 1st Place**: Featured in research paper + $500 prize
-- **🥈 2nd Place**: GitHub sponsor badge + $300 prize
-- **🥉 3rd Place**: Contributor spotlight + $200 prize
 
 ### Special Awards
 
@@ -335,7 +327,7 @@ View the live leaderboard at: [Hugging Face Spaces Dashboard](https://huggingfac
 ## 💬 Community
 
 - **Discord**: [Join our server](https://discord.gg/quantum-limit-graph)
-- **GitHub Discussions**: [Ask questions](https://github.com/your-repo/quantum-limit-graph/discussions)
+- **GitHub Discussions**: [Ask questions](https://github.com/NurcholishAdam/Quantum-LIMIT-Graph-v2.4.0-NSN/discussions)
 - **Twitter**: [@QuantumLIMIT](https://twitter.com/QuantumLIMIT)
 
 ---
@@ -362,3 +354,4 @@ Need help? Reach out:
 **Happy Contributing! 🚀**
 
 Let's push the boundaries of quantum-enhanced multilingual model editing together!
+
