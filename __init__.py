@@ -63,3 +63,7 @@ __all__ = [
 ]
 
 __version__ = '2.4.0'
+
+# Contribution-ready modules with Hugging Face dashboard
+__contribution_ready__ = True
+__dashboard_url__ = 'https://huggingface.co/spaces/your-org/nsn-integration-dashboard'

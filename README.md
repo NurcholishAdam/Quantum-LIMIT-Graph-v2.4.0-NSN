@@ -2,27 +2,128 @@
 
 Comprehensive integration of **Nested Subspace Networks (NSNs)** with LIMIT-Graph and REPAIR to enhance quantum benchmarking and multilingual edit reliability.
 
+## 🚀 **NEW in v2.4.0: Contribution-Ready Modules + Hugging Face Dashboard**
+
+**Four modular scenarios** are now ready for community contributions with an **interactive Hugging Face Spaces dashboard**!
+
+### Quick Links
+- 🎯 **[Contributor Guide](CONTRIBUTOR_GUIDE.md)** - Start contributing now!
+- 🎨 **[Live Dashboard](https://huggingface.co/spaces/your-org/nsn-integration-dashboard)** - Try it online
+- 📚 **[Complete Documentation](INDEX.md)** - Full navigation index
+- 🚀 **[Deployment Guide](HUGGINGFACE_DEPLOYMENT.md)** - Deploy your own
+
+### v2.4.0 Contribution Scenarios
+
+| Scenario | Module | Dashboard Panel | Reward |
+|----------|--------|-----------------|--------|
+| **1. Backend Telemetry** | [backend_telemetry_rank_adapter.py](backend_telemetry_rank_adapter.py) | FLOPs vs Reliability | Responsiveness Badge |
+| **2. Edit Propagation** | [edit_propagation_engine.py](edit_propagation_engine.py) | Containment Heatmap | Quality Score |
+| **3. Rank Feedback** | [rank_feedback_generator.py](rank_feedback_generator.py) | Personalized Feedback | Efficiency Badge |
+| **4. Ensemble Inference** | [ensemble_inference_manager.py](ensemble_inference_manager.py) | Agreement Matrix | Reliability Boost |
+
+**🏆 Monthly Prizes**: $500 (1st), $300 (2nd), $200 (3rd) + 9 Achievement Badges
+
+---
+
 ## Overview
 
-This integration implements three key stages:
+This integration implements both **original NSN features** and **new v2.4.0 contribution-ready scenarios**:
 
+### Original Features (v2.3.0)
 1. **Backend-Aware Rank Selection**: Dynamically adjust model rank based on quantum backend constraints
 2. **Multilingual Edit Reliability**: Evaluate how rank affects correction accuracy across languages
 3. **Contributor Challenges**: Design leaderboard tasks with rank-aware evaluation and compute-performance frontiers
+
+### New v2.4.0 Features
+4. **Real-Time Backend Telemetry Adaptation**: Dynamic rank shifts based on live backend health
+5. **Cross-Lingual Edit Propagation**: Transfer edits via subspace containment analysis
+6. **Contributor-Aware Rank Feedback**: Personalized recommendations with badge system
+7. **Ensemble Inference Across Backends**: Multi-backend consensus with agreement scoring
 
 ## Architecture
 
 ```
 nsn_integration/
-├── __init__.py                          # Package initialization
-├── backend_aware_rank_selector.py       # Stage 1: Backend-aware rank selection
-├── multilingual_nsn_evaluator.py        # Stage 2: Multilingual evaluation
-├── nsn_leaderboard.py                   # Stage 3: Contributor challenges
-├── nsn_dashboard.py                     # Visualization dashboard
-├── limit_graph_nsn_integration.py       # LIMIT-Graph integration
-├── demo_complete_nsn_integration.py     # Complete demo
-└── README.md                            # This file
+├── Core Modules (Original v2.3.0)
+│   ├── backend_aware_rank_selector.py       # Backend-aware rank selection
+│   ├── multilingual_nsn_evaluator.py        # Multilingual evaluation
+│   ├── nsn_leaderboard.py                   # Contributor challenges
+│   ├── nsn_dashboard.py                     # Visualization dashboard
+│   └── limit_graph_nsn_integration.py       # LIMIT-Graph integration
+│
+├── v2.4.0 Contribution Modules (NEW!)
+│   ├── backend_telemetry_rank_adapter.py    # Real-time rank adaptation
+│   ├── edit_propagation_engine.py           # Cross-lingual propagation
+│   ├── rank_feedback_generator.py           # Personalized feedback
+│   └── ensemble_inference_manager.py        # Multi-backend consensus
+│
+├── Hugging Face Dashboard (NEW!)
+│   ├── huggingface_dashboard.py             # 6-panel interactive UI
+│   ├── app.py                               # Spaces entry point
+│   └── requirements_dashboard.txt           # Dashboard dependencies
+│
+├── Documentation
+│   ├── README.md                            # This file
+│   ├── CONTRIBUTOR_GUIDE.md                 # How to contribute
+│   ├── HUGGINGFACE_DEPLOYMENT.md            # Deployment guide
+│   ├── INDEX.md                             # Navigation index
+│   └── [10+ other docs]                     # Complete documentation
+│
+└── Testing & Demo
+    ├── test_v2.4.0_scenarios.py             # Test suite
+    ├── demo_v2.4.0_scenarios.py             # Demo script
+    └── demo_complete_nsn_integration.py     # Original demo
 ```
+
+## 🎨 Hugging Face Spaces Dashboard
+
+**NEW in v2.4.0**: Interactive 6-panel dashboard for community contributions!
+
+### Dashboard Panels
+
+1. **📊 Backend Telemetry** - Real-time rank adaptation visualization
+   - Line chart: FLOPs vs Reliability across backend states
+   - Metric: Responsiveness vs Reliability trade-off
+
+2. **🌍 Multilingual Accuracy** - Language × Rank performance heatmap
+   - Heatmap: Accuracy across 15+ languages and 6 ranks
+   - Metric: Average accuracy matrix
+
+3. **🔗 Edit Propagation** - Cross-lingual transfer visualization
+   - Containment heatmap with flow arrows
+   - Metric: Quality score of propagated edits
+
+4. **⚡ Pareto Frontier** - Efficiency vs Expressiveness trade-offs
+   - Scatter plot with Pareto optimal line
+   - Metric: Position on efficiency frontier
+
+5. **🏆 Contributor Leaderboard** - Personalized feedback panel
+   - Badge display and performance statistics
+   - Metric: Efficiency badge (accuracy/FLOPs)
+
+6. **🔬 Ensemble Inference** - Multi-backend agreement matrix
+   - Backend consensus heatmap
+   - Metric: Agreement score + Reliability boost
+
+### Try It Now
+
+```bash
+# Run locally
+pip install -r requirements_dashboard.txt
+python app.py
+
+# Or visit live dashboard
+# https://huggingface.co/spaces/your-org/nsn-integration-dashboard
+```
+
+### Deploy Your Own
+
+```bash
+export HF_USERNAME="your-username"
+./deploy_to_spaces.sh
+```
+
+See [HUGGINGFACE_DEPLOYMENT.md](HUGGINGFACE_DEPLOYMENT.md) for complete instructions.
 
 ## Stage 1: Backend-Aware Rank Selection
 
@@ -370,11 +471,11 @@ To contribute to NSN integration:
 This integration is based on the Nested Subspace Networks (NSN) framework from:
 
 ```bibtex
-@article{zhang2025deep,
+@article{zhang2024deep,
   title={Deep Hierarchical Learning with Nested Subspace Networks},
   author={Zhang, Yifan and others},
   journal={arXiv preprint},
-  year={2025},
+  year={2024},
   note={NSN framework for hierarchical representation learning with nested subspaces}
 }
 ```
@@ -386,7 +487,7 @@ If you use this NSN integration in your research, please cite both the original 
   title={NSN Integration with LIMIT-Graph and REPAIR for Quantum Benchmarking},
   author={AI Research Agent Team},
   year={2025},
-  url={https://github.com/NurcholishAdam/Quantum-LIMIT-Graph-v2.4.0-NSN},
+  url={https://github.com/your-repo/quantum_integration/nsn_integration},
   note={Integration of Nested Subspace Networks with quantum computing backends and multilingual model editing}
 }
 ```
@@ -598,5 +699,3 @@ The demo will:
 - [ ] Extended language support (50+ languages)
 - [ ] Integration with Hugging Face Spaces for public leaderboard
 - [ ] Quantum circuit optimization for rank-specific operations
-
-
