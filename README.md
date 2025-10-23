@@ -113,13 +113,13 @@ pip install -r requirements_dashboard.txt
 python app.py
 
 # Or visit live dashboard
-# https://huggingface.co/spaces/your-org/nsn-integration-dashboard
+# https://huggingface.co/spaces/AIResAgTeam/quantum-nsn-integration
 ```
 
 ### Deploy Your Own
 
 ```bash
-export HF_USERNAME="your-username"
+export HF_USERNAME="nurcholish"
 ./deploy_to_spaces.sh
 ```
 
@@ -139,7 +139,7 @@ See [HUGGINGFACE_DEPLOYMENT.md](HUGGINGFACE_DEPLOYMENT.md) for complete instruct
 ### Usage
 
 ```python
-from quantum_integration.nsn_integration import BackendAwareRankSelector, BackendType
+from Quantum-LIMIT-Graph-v2.4.0-NSN import BackendAwareRankSelector, BackendType
 
 # Create selector
 selector = BackendAwareRankSelector()
@@ -177,7 +177,7 @@ curve = selector.compute_flops_vs_reliability(BackendType.IBM_WASHINGTON)
 ### Usage
 
 ```python
-from quantum_integration.nsn_integration import MultilingualNSNEvaluator
+from Quantum-LIMIT-Graph-v2.4.0-NSN import MultilingualNSNEvaluator
 
 # Create evaluator
 evaluator = MultilingualNSNEvaluator()
@@ -220,7 +220,7 @@ print(f"Containment Score: {containment.containment_score:.3f}")
 ### Usage
 
 ```python
-from quantum_integration.nsn_integration import NSNLeaderboard
+from Quantum-LIMIT-Graph-v2.4.0-NSN import NSNLeaderboard
 
 # Create leaderboard
 leaderboard = NSNLeaderboard()
@@ -274,7 +274,7 @@ feedback = leaderboard.generate_feedback(submission.submission_id)
 ### Usage
 
 ```python
-from quantum_integration.nsn_integration import NSNDashboard
+from Quantum-LIMIT-Graph-v2.4.0-NSN import NSNDashboard
 
 # Create dashboard
 dashboard = NSNDashboard()
@@ -315,7 +315,7 @@ dashboard.create_comprehensive_dashboard(
 The NSN integration is embedded into the LIMIT-Graph benchmarking harness for seamless evaluation:
 
 ```python
-from quantum_integration.nsn_integration.limit_graph_nsn_integration import (
+from Quantum-LIMIT-Graph-v2.4.0-NSN import (
     LIMITGraphNSNBenchmark,
     BenchmarkConfig
 )
@@ -351,10 +351,10 @@ comparison = benchmark.compare_backends(test_cases)
 
 ```bash
 # Run complete NSN integration demo
-python quantum_integration/nsn_integration/demo_complete_nsn_integration.py
+python demo_complete_nsn_integration.py
 
 # Run LIMIT-Graph integration demo
-python quantum_integration/nsn_integration/limit_graph_nsn_integration.py
+python limit_graph_nsn_integration.py
 ```
 
 ### Demo Output
@@ -423,7 +423,7 @@ rank_config = selector.select_rank(BackendType.IBM_WASHINGTON)
 
 ```python
 from quantum_integration import quantum_health_checker
-from quantum_integration.nsn_integration import BackendAwareRankSelector
+from Quantum-LIMIT-Graph-v2.4.0-NSN import BackendAwareRankSelector
 
 # Check backend health
 health = quantum_health_checker.check_backend_health('ibm_washington')
@@ -483,11 +483,11 @@ This integration is based on the Nested Subspace Networks (NSN) framework from:
 If you use this NSN integration in your research, please cite both the original NSN paper and this implementation:
 
 ```bibtex
-@software{nsn_limit_graph_integration,
+@software{Quantum-LIMIT-Graph-v2.4.0-NSN,
   title={NSN Integration with LIMIT-Graph and REPAIR for Quantum Benchmarking},
   author={AI Research Agent Team},
   year={2025},
-  url={https://github.com/your-repo/quantum_integration/nsn_integration},
+  url={https://github.com/NurcholishAdam/Quantum-LIMIT-Graph-v2.4.0-NSN},
   note={Integration of Nested Subspace Networks with quantum computing backends and multilingual model editing}
 }
 ```
@@ -525,7 +525,7 @@ Dynamically adjusts NSN ranks based on real-time backend health metrics.
 
 **Usage**:
 ```python
-from quantum_integration.nsn_integration import BackendTelemetryRankAdapter
+from Quantum-LIMIT-Graph-v2.4.0-NSN import BackendTelemetryRankAdapter
 
 adapter = BackendTelemetryRankAdapter()
 
@@ -673,7 +673,7 @@ agreement_matrix, labels = manager.get_agreement_heatmap(
 
 ```bash
 # Run complete v2.4.0 scenarios demo
-python quantum_integration/nsn_integration/demo_v2.4.0_scenarios.py
+python demo_v2.4.0_scenarios.py
 ```
 
 ### Demo Output
@@ -699,3 +699,4 @@ The demo will:
 - [ ] Extended language support (50+ languages)
 - [ ] Integration with Hugging Face Spaces for public leaderboard
 - [ ] Quantum circuit optimization for rank-specific operations
+
