@@ -183,12 +183,12 @@ adapter = BackendTelemetryRankAdapter()
 
 ### Option 2: Run Demo
 ```bash
-python quantum_integration/nsn_integration/demo_v2.4.0_scenarios.py
+python demo_v2.4.0_scenarios.py
 ```
 
 ### Option 3: Run Tests
 ```bash
-pytest quantum_integration/nsn_integration/test_v2.4.0_scenarios.py -v
+pytest test_v2.4.0_scenarios.py -v
 ```
 
 ## Dashboard Extensions
@@ -265,3 +265,4 @@ pytest quantum_integration/nsn_integration/test_v2.4.0_scenarios.py -v
 - Edit Propagation Engine: Complete
 - Rank Feedback Generator: Complete
 - Ensemble Inference Manager: Complete
+
