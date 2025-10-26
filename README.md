@@ -21,8 +21,6 @@ Comprehensive integration of **Nested Subspace Networks (NSNs)** with LIMIT-Grap
 | **3. Rank Feedback** | [rank_feedback_generator.py](rank_feedback_generator.py) | Personalized Feedback | Efficiency Badge |
 | **4. Ensemble Inference** | [ensemble_inference_manager.py](ensemble_inference_manager.py) | Agreement Matrix | Reliability Boost |
 
-**🏆 Monthly Prizes**: $500 (1st), $300 (2nd), $200 (3rd) + 9 Achievement Badges
-
 ---
 
 ## Overview
@@ -699,4 +697,5 @@ The demo will:
 - [ ] Extended language support (50+ languages)
 - [ ] Integration with Hugging Face Spaces for public leaderboard
 - [ ] Quantum circuit optimization for rank-specific operations
+
 
