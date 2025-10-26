@@ -8,7 +8,7 @@ Comprehensive integration of **Nested Subspace Networks (NSNs)** with LIMIT-Grap
 
 ### Quick Links
 - 🎯 **[Contributor Guide](CONTRIBUTOR_GUIDE.md)** - Start contributing now!
-- 🎨 **[Live Dashboard](https://huggingface.co/spaces/your-org/nsn-integration-dashboard)** - Try it online
+- 🎨 **[Live Dashboard](https://huggingface.co/spaces/AIResAgTeam/quantum-nsn-integration)** - Try it online
 - 📚 **[Complete Documentation](INDEX.md)** - Full navigation index
 - 🚀 **[Deployment Guide](HUGGINGFACE_DEPLOYMENT.md)** - Deploy your own
 
@@ -697,5 +697,6 @@ The demo will:
 - [ ] Extended language support (50+ languages)
 - [ ] Integration with Hugging Face Spaces for public leaderboard
 - [ ] Quantum circuit optimization for rank-specific operations
+
 
 
